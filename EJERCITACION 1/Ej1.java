@@ -5,22 +5,22 @@ public class Ej1 {
         Scanner sc = new Scanner(System.in);
 
         int num;
-        int sumaPositivos = 0;
-        int cantNegativos = 0;
+        int sumap = 0;
+        int cantn = 0;
 
         do {
             System.out.print("Ingrese un numero (0 para terminar): ");
             num = sc.nextInt();
 
             if (num > 0) {
-                sumaPositivos += num;
+                sumap += num;
             } else if (num < 0) {
-                cantNegativos++;
+                cantn++;
             }
 
         } while (num != 0);
 
-        System.out.println("Total positivos: " + sumaPositivos);
-        System.out.println("Cantidad negativos: " + cantNegativos);
+        System.out.println("Total positivos: " + sumap);
+        System.out.println("Cantidad negativos: " + cantn);
     }
 }
